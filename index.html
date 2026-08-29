@@ -1,0 +1,456 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>顧問版 · 案例轉產品指令總表</title><style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2eee6;color:#1e1c19;font-size:16px;line-height:1.7;
+ font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif}
+header{background:linear-gradient(160deg,#1f3a34,#0f1f1c);color:#dfece7;padding:32px 22px 26px}
+header .in{max-width:920px;margin:0 auto}
+header h1{margin:0 0 8px;font-size:31px;color:#7fd1b4;font-weight:800}
+header p{margin:2px 0;color:#a9c4bb;font-size:15px}
+nav{position:sticky;top:0;z-index:9;background:rgba(31,58,52,.97);padding:9px 22px;
+ box-shadow:0 2px 10px rgba(0,0,0,.2);overflow-x:auto;white-space:nowrap}
+nav a{color:#7fd1b4;text-decoration:none;font-size:13.5px;padding:5px 12px;border:1px solid #3f6b60;
+ border-radius:14px;margin-right:6px;display:inline-block}
+nav a:hover{background:#2c5249;color:#fff}
+.xlink{background:#25423b;padding:10px 22px;text-align:center;font-size:15px;color:#a9c4bb}
+.xlink a{color:#7fd1b4;font-weight:700;text-decoration:none;border-bottom:1px dotted #4f8577}
+.xlink a:hover{color:#fff;border-color:#fff}
+@media print{.xlink{display:none}}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px 80px}
+h2{font-size:22px;color:#1f5a4c;background:#e4efe9;border-left:8px solid #2e8b70;
+ padding:11px 16px;margin:38px 0 16px;scroll-margin-top:58px;border-radius:0 8px 8px 0}
+h2.resc{color:#8d2823;background:#faeceb;border-left-color:#b4342f}
+.card{background:#fff;border:1px solid #d4d0c6;border-radius:12px;padding:18px 20px;margin-bottom:18px;
+ box-shadow:0 2px 10px rgba(30,50,45,.06)}
+.hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.no{background:#1f3a34;color:#7fd1b4;border-radius:7px;padding:4px 12px;font-size:15px;font-weight:700}
+.hd h3{margin:0;font-size:21px;color:#1f3a34;font-weight:800}
+.tag{font-size:13px;font-weight:700;border-radius:20px;padding:3px 12px;border:1.5px solid;margin-left:auto}
+.t0{color:#1f5236;border-color:#2e7d4f;background:#eaf3ec}
+.t1{color:#8a5a17;border-color:#b8912f;background:#fdf3e2}
+.t2{color:#8d2823;border-color:#b4342f;background:#faeceb}
+.one{margin:0 0 13px;color:#55605a;font-size:16.5px}
+.pw{position:relative}
+.pw pre{background:#16211e;border:1px solid #2f4a43;border-radius:9px;margin:0;padding:17px 19px;overflow-x:auto}
+.pw code{color:#d8e8e2;font-size:14.5px;line-height:1.72;white-space:pre-wrap;word-break:break-word;
+ font-family:"Consolas","DejaVu Sans Mono",monospace}
+.cp{position:absolute;top:9px;right:10px;background:#2e8b70;color:#fff;border:none;border-radius:6px;
+ padding:6px 16px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.cp:hover{background:#3fae8d}
+.cp.ok{background:#1f5236}
+.exp{margin:11px 0 0;font-size:15px;color:#1f5236;background:#eaf3ec;border-radius:8px;padding:9px 14px}
+.exp b{color:#143a27}
+.loop{background:#16211e;color:#d8e8e2;border-radius:12px;padding:24px 26px;margin:26px 0}
+.loop .lt{color:#7fd1b4;font-weight:800;font-size:17px;margin-bottom:18px}
+.steps{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.st{flex:1;min-width:130px;background:#1f3a34;border:1px solid #3f6b60;border-radius:9px;
+ padding:13px 12px;text-align:center}
+.st b{display:block;color:#7fd1b4;font-size:18px;margin-bottom:5px}
+.st span{font-size:14px;color:#a9c4bb;line-height:1.5}
+.ar{display:flex;align-items:center;color:#4f8577;font-size:22px}
+.back{margin-top:12px;text-align:center;background:#1f3a34;border:1px dashed #4f8577;
+ border-radius:9px;padding:9px;color:#7fd1b4;font-size:15px}
+.lnote{margin:16px 0 0;font-size:15.5px;line-height:1.8;color:#c3d6cf}
+.lnote b{color:#7fd1b4}
+.rule{background:linear-gradient(160deg,#1f3a34,#0f1f1c);color:#dfece7;border-radius:12px;
+ padding:20px 24px;margin:26px 0;font-size:19px;line-height:1.75;text-align:center}
+.rule b{color:#7fd1b4}
+footer{text-align:center;color:#7c8681;font-size:13.5px;padding:26px}
+@media print{nav,.cp{display:none}body{background:#fff}
+ .pw pre{background:#f0f2f0;border:1px solid #2e8b70}.pw code{color:#1e1c19}
+ .card{break-inside:avoid}}
+</style>
+<header><div class="in"><h1>把你做過的案子，變成可以賣的產品</h1>
+<p>顧問版指令總表　·　照順序貼進 WorkBuddy，每一張都有複製鈕</p>
+<p>你不需要寫程式，也不需要先整理好資料</p></div></header>
+<div class="xlink">還沒裝 Obsidian？　<a href="setup.html">先花 10 分鐘裝起來 →</a></div>
+<nav><a href="#s0">0 · 開始前（做一次）</a><a href="#s1">1 · 把案子放進來（每個案子一次）</a><a href="#s2">2 · 找出重複的模式（累積 3 個案例之後）</a><a href="#s3">3 · 包裝成產品</a><a href="#s4">4 · 交付完回流（每次結案）</a><a href="#s5">5 · 拿出去變現</a><a href="#s6">6 · 維護</a><a href="#s7">7 · 每次都要</a></nav>
+<div class="wrap">
+<div class="loop"><div class="lt">這一套在做什麼</div>
+<div class="steps">
+ <div class="st"><b>1　案例</b><span>做過的事</span></div><div class="ar">→</div>
+ <div class="st"><b>2　模式</b><span>重複出現的<br>需求 ＋ 做法</span></div><div class="ar">→</div>
+ <div class="st"><b>3　產品</b><span>可以標價<br>的包裝</span></div><div class="ar">→</div>
+ <div class="st"><b>4　交付</b><span>產生新案例</span></div>
+</div>
+<div class="back">↺　每次交付完，回流改進 1</div>
+<p class="lnote">案例庫只有 <b>1</b>。少了 <b>2、3</b> 它是作品集不是產品；少了 <b>4</b> 回流，產品不會進化。</p></div>
+
+<div class="rule">只要那句指令<b>會動到你的檔案</b>，就記得加三句：<br>
+<b>先給我看　·　我說 OK 你才動　·　沒說到的不要碰</b></div>
+<h2 id="s0">0 · 開始前（做一次）</h2><div class="card">
+<div class="hd"><span class="no">0.1</span><h3>裝 Obsidian 外掛</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">讓 AI 看得懂你的筆記庫，而不只是把它當一堆文字檔。</p>
+<div class="pw"><button class="cp" data-i="1">複製</button><pre><code id="c1">請幫我安裝 Obsidian 這個 Skill（Skills 市集裡的名稱就叫 obsidian）。
+
+裝好之後，請告訴我三件事：
+1. 它現在能對我的筆記做哪些事？讀？寫？搜尋？改結構？
+2. 有哪些事它做不到？
+3. 它會不會刪除或覆蓋我現有的筆記？如果會，是在什麼情況下？</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　它答得出第 3 題。答不出來就追一句「那你先假設不可以刪，之後每一步都先問我」</p>
+</div><div class="card">
+<div class="hd"><span class="no">0.2</span><h3>建骨架</h3><span class="tag t1">只會新增</span></div>
+<p class="one">八個資料夾，對應「案例 → 模式 → 產品 → 回流」這個閉環。</p>
+<div class="pw"><button class="cp" data-i="2">複製</button><pre><code id="c2">我要建一個「顧問案例 → 產品」的知識庫。
+請在這個資料夾底下把空的骨架建好：
+【貼上你的知識庫資料夾路徑】
+
+請建這幾個（只建空的，不要放任何檔案進去）：
+  01_案例      一個案子一張卡
+  02_模式      從多個案例抽出來的重複結構
+  03_產品      可以標價、可以賣的包裝
+  04_資源      人、夥伴、工具、資料源
+  05_交付物    可以重用的模板、框架、文件
+  06_客戶類型  產業 ＋ 規模 ＋ 情境
+  07_教訓
+  99_附件
+
+規則：
+1. 只建空資料夾，不要建立或移動任何檔案。
+2. 建好之後把清單列給我看。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　八個空資料夾</p>
+</div><h2 id="s1">1 · 把案子放進來（每個案子一次）</h2><div class="card">
+<div class="hd"><span class="no">1.1</span><h3>口述輸入（主力入口）</h3><span class="tag t1">只會新增</span></div>
+<p class="one">不用填表。你講，它幫你填，缺的它問你。</p>
+<div class="pw"><button class="cp" data-i="3">複製</button><pre><code id="c3">我要把一個做過的案子放進知識庫。我先隨便講，你不要打斷。
+
+【我要講的】
+（把案子講一遍，多亂都沒關係。至少講到：客戶原本說要什麼、
+  你判斷真正的問題是什麼、你做了哪幾步、動用了誰、
+  結果怎樣、哪裡沒解決）
+
+聽完之後：
+1. 照「案例卡格式」（1.2）整理成一份草稿，存到 01_案例。
+2. 我沒講到的欄位【不要幫我編】——標成【待補】。
+3. 然後一次問我最多 5 個問題，只挑「不問就沒辦法用」的。
+   優先問：真正的問題是什麼 / 結果的數字怎麼來的 /
+           哪些東西可以重用 / 客戶為什麼肯付錢
+4.「結果」那一欄的每個數字，都要標明是
+  「客戶說的 / 我量的 / 我估的」。我沒說清楚就問我，不要假設。
+
+【動手之前】草稿先貼給我看，我說 OK 你才存檔。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一份大部分填好、缺的地方標【待補】的草稿 ＋ 最多 5 個問題</p>
+</div><div class="card">
+<div class="hd"><span class="no">1.2</span><h3>案例卡格式</h3></div>
+<p class="one">1.1 用的就是這個格式。要自己填也可以直接複製這一份。</p>
+<div class="pw"><button class="cp" data-i="4">複製</button><pre><code id="c4">---
+案例ID: C-2026-014
+標題: （一句話標題）
+客戶代號: A公司                ← 不寫真名
+產業:
+規模:
+我的角色:
+期間: 2025-03 ~ 2025-06
+投入: 約 __ 人日
+收費模式: 固定價 / 按時 / 分潤 / 無償
+機密等級: 公開 / 內部 / 機密
+用到哪個既有產品: （產品名 v?，或「無，這是新的」）
+狀態: 進行中 / 已結案 / 中止
+標籤: []
+---
+
+## 一句話
+誰、什麼問題、結果怎樣。
+
+## 客戶原本說的需求
+照抄他們的話，不要修飾。
+
+## 真正的問題
+你判斷的。跟上面不一樣的地方，就是你的價值所在。
+
+## 為什麼找上我 / 我為什麼接
+
+## 我做了什麼
+1. （做了什麼 ＋ 為什麼是這個做法）
+2.
+3.
+
+## 我動用了什麼
+- 我自己會的：
+- 我找的人：（代號 ＋ 他提供什麼）
+- 工具／資料：
+- 沿用的舊東西：
+
+## 產出了什麼
+| 交付物 | 放在哪 | 能不能重用 |
+
+## 結果
+| 指標 | 之前 | 之後 | 怎麼知道的 |
+（怎麼知道的只有三種：客戶說的 / 我量的 / 我估的）
+
+## 客戶為什麼肯付錢
+省時間 / 降風險 / 交差 / 借我的名 / 他做不來
+
+## 沒解決的部分
+
+## 如果重來
+
+## 如果要做成產品，最難標準化的是哪一步
+
+## 這次要不要改產品
+□ 不用　□ 改流程：____　□ 多一份可重用交付物：____</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　貼給 AI 當格式參考，或自己直接填</p>
+</div><div class="card">
+<div class="hd"><span class="no">1.3</span><h3>從舊檔案反推</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">手上有做過的提案、簡報、結案報告 —— 先讓它盤點，不要急著整理。</p>
+<div class="pw"><button class="cp" data-i="5">複製</button><pre><code id="c5">我這裡有一些做過的案子的舊檔案（提案、簡報、結案報告、往來紀錄）：
+【貼上資料夾路徑】
+
+請先只看不改，告訴我：
+1. 這些檔案大概涵蓋幾個不同的案子？各是什麼？
+2. 每個案子的資料完整度如何——哪些欄位有料、哪些完全沒有？
+3. 哪幾個案子的素材足夠做成完整的案例卡？哪幾個只能做半張？
+
+先不要建立任何檔案。我看過之後再決定要整理哪幾個。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一張表，你就知道該從哪幾個案子開始</p>
+</div><h2 id="s2">2 · 找出重複的模式（累積 3 個案例之後）</h2><div class="card">
+<div class="hd"><span class="no">2.1</span><h3>找同構</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">「長得一樣」不是同產業，是底層問題相同、做法可以照搬。</p>
+<div class="pw"><button class="cp" data-i="6">複製</button><pre><code id="c6">請掃描 01_案例 裡所有的案例卡，找出「需求形狀長得一樣」的組合。
+
+「長得一樣」不是指同一個產業，是指：
+客戶要解決的底層問題相同、或是我的做法可以照搬。
+
+每一組請給我：
+- 涉及哪幾個案例
+- 它們共同的「需求形狀」是什麼（一句話）
+- 我的做法有多少比例是一樣的
+- 判定：【表面像】產業一樣但問題不同
+        【真的同構】底層問題相同、做法可以照搬
+
+只回報，不要建立任何檔案。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　「真的同構」那幾組才有價值。一組都沒有，代表案例還不夠多，先回去做 1.1</p>
+</div><div class="card">
+<div class="hd"><span class="no">2.2</span><h3>抽成模式卡</h3><span class="tag t1">只會新增</span></div>
+<p class="one">把 B 類同構組寫成模式卡。少於 2 個案例支撐的不准建。</p>
+<div class="pw"><button class="cp" data-i="7">複製</button><pre><code id="c7">根據剛才找到的「真的同構」那幾組，幫我建「模式卡」，存到 02_模式。
+
+一個模式一張卡，內容包含：
+- 這個模式解決的需求形狀（一句話）
+- 出現在哪幾個案例（用 [[案例卡名]] 連結）
+- 標準做法：分成幾步，每一步在做什麼
+- 每一步需要什麼資源
+- 哪幾步每次都一樣（可標準化）
+- 哪幾步每次都不同 ← 這是產品化的瓶頸
+- 歷史工時範圍：最少 __ 人日，最多 __ 人日
+
+規則：
+1. 只用案例卡裡真的有的內容，不足的標【待補】。
+2. 少於 2 個案例支撐的，不要建卡——列出來告訴我就好。
+
+【動手之前】先列出你打算建哪幾張，我說 OK 你才建。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　每張模式卡都連得回 2 個以上的案例</p>
+</div><div class="card">
+<div class="hd"><span class="no">2.3</span><h3>資源盤點</h3><span class="tag t1">只會新增</span></div>
+<p class="one">你能調動誰、哪裡是單點風險。</p>
+<div class="pw"><button class="cp" data-i="8">複製</button><pre><code id="c8">請掃描所有案例卡的「我動用了什麼」，整理出資源卡，存到 04_資源。
+
+一個資源一張卡（人用代號，不要真名），內容包含：
+- 類型：人 / 工具 / 資料源 / 夥伴
+- 他提供什麼能力
+- 用在哪幾個案例（[[連結]]）
+- 調動難度：隨時可以 / 要排期 / 看關係 / 不確定還在不在
+- 有沒有替代方案
+
+最後另外告訴我：
+★ 哪些資源被 2 個以上的案例依賴，但【只有一個來源】？
+   —— 這是我的單點風險。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一份資源名冊 ＋ 一張單點風險清單</p>
+</div><div class="card">
+<div class="hd"><span class="no">2.4</span><h3>交付物盤點</h3><span class="tag t1">只會新增</span></div>
+<p class="one">哪一份被重用最多次 —— 那就是可以商品化的模板。</p>
+<div class="pw"><button class="cp" data-i="9">複製</button><pre><code id="c9">請掃描所有案例卡的「產出了什麼」，整理出交付物卡，存到 05_交付物。
+
+每一張包含：
+- 這是什麼（報告 / 模型 / 工作坊 / 檢查表 / 簡報…）
+- 原本為哪個案例做的（[[連結]]）
+- 被重用過幾次、用在哪些案例
+- 重用時要改多少：幾乎不用改 / 改一半 / 等於重做
+- 現在檔案放在哪
+
+最後告訴我：★ 哪一份被重用最多次？改動最少？
+—— 那一份最有機會直接商品化。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　重用次數排行</p>
+</div><h2 id="s3">3 · 包裝成產品</h2><div class="card">
+<div class="hd"><span class="no">3.1</span><h3>從模式生產品卡</h3><span class="tag t1">只會新增</span></div>
+<p class="one">有價格、有交付步驟、有版本記錄 —— 才叫產品。</p>
+<div class="pw"><button class="cp" data-i="10">複製</button><pre><code id="c10">請把【模式名稱】這個模式，包裝成一張「產品卡」，存到 03_產品。
+
+格式：
+---
+產品ID:
+名稱:
+版本: v1
+狀態: 草稿 / 可賣 / 暫停
+來自模式: [[模式卡名]]
+證據案例: [[案例1]] [[案例2]] [[案例3]]
+---
+
+## 賣給誰
+## 他買的是什麼
+（省時間 / 降風險 / 交差 / 他做不來——用案例卡的「客戶為什麼肯付錢」）
+## 交付步驟
+（每一步：產出什麼、要多久、誰做）
+## 需要的資源  → [[資源卡]]
+## 可以直接用的東西  → [[交付物]]
+## 定價參考
+歷史工時：__ 到 __ 人日　　過去收費：（沒有就標【待補】）
+## 還不能標準化的
+（模式卡裡「每次都不同」的那幾步。這決定它現在能不能賣）
+## 版本記錄
+| 版本 | 改了什麼 | 憑哪幾個案例 | 日期 |
+| v1 | 初版 | | |
+
+規則：只用既有卡片裡有的內容，缺的標【待補】不要編。
+【動手之前】先貼給我看，我說 OK 你才存。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一張有價格區間、有證據案例、有版本記錄的產品卡</p>
+</div><div class="card">
+<div class="hd"><span class="no">3.2</span><h3>產品化瓶頸</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">最靠你個人判斷的那一步，就是這個產品現在賣不動的原因。</p>
+<div class="pw"><button class="cp" data-i="11">複製</button><pre><code id="c11">請看 03_產品 裡的【產品名稱】，回答我三件事：
+
+1. 交付步驟裡，哪幾步是「換一個人做也會一樣」的？
+2. 哪幾步是「只有我做得來」的？為什麼——是因為經驗、關係、
+   還是因為那一步根本還沒想清楚？
+3. 如果我要讓別人也能交付這個產品，最先要把哪一步文件化？
+
+規則：每個判斷都要指出是根據哪幾個案例卡的哪一段。
+只回報，不要修改任何檔案。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　你會知道這個產品現在是「可以複製」還是「只能你自己做」</p>
+</div><h2 id="s4">4 · 交付完回流（每次結案）</h2><div class="card">
+<div class="hd"><span class="no">4.1</span><h3>結案回流</h3><span class="tag t1">只會新增</span></div>
+<p class="one">閉環就靠這一步。不做這一步，產品不會進化。</p>
+<div class="pw"><button class="cp" data-i="12">複製</button><pre><code id="c12">我剛結束一個案子，用的是產品【產品名稱 v?】。
+
+請先幫我建這個案子的案例卡（照 1.1 的流程），
+然後回答一個問題：
+
+★ 這次有沒有東西該進產品？
+
+只有三個答案，請幫我判斷並說明理由：
+  □ 不用——這次跟前幾次一樣
+  □ 改流程——哪一步、為什麼（引用這次案例卡裡的哪一句）
+  □ 多一份可重用的交付物——哪一份、可以用在什麼情況
+
+如果是後兩者，請草擬產品卡的新版本，
+在「版本記錄」加一行，寫明【憑哪個案例改的】。
+
+【動手之前】不要改產品卡，先把建議給我看。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一張新案例卡 ＋ 一個明確的「改 / 不改」判斷</p>
+</div><div class="card">
+<div class="hd"><span class="no">4.2</span><h3>產品改版</h3><span class="tag t2">會覆蓋</span></div>
+<p class="one">每一次改版都要指得回是哪幾個案例逼你改的。</p>
+<div class="pw"><button class="cp" data-i="13">複製</button><pre><code id="c13">請把【產品名稱】從 v_ 更新到 v_。
+
+改動內容：
+【寫你要改什麼】
+
+規則：
+1. 在「版本記錄」加一行：版本 / 改了什麼 / 憑哪幾個案例 / 日期。
+   「憑哪幾個案例」必須是真的存在的案例卡，用 [[連結]]。
+2. 舊版本的內容不要刪除——搬到卡片最下面的「歷史版本」區保留。
+3. 只改我指定的部分，其他一個字都不要動。
+
+【動手之前】先用表格給我看：
+| 段落 | 原本寫什麼 | 改成什麼 | 憑哪個案例 |
+我逐條說 OK 之後你才寫進檔案。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　改完之後你三個月後還看得懂當初為什麼改</p>
+</div><h2 id="s5">5 · 拿出去變現</h2><div class="card">
+<div class="hd"><span class="no">5.1</span><h3>去識別化 case study</h3><span class="tag t1">只會新增</span></div>
+<p class="one">給 prospect 看的一頁。估的數字一律不准寫進去。</p>
+<div class="pw"><button class="cp" data-i="14">複製</button><pre><code id="c14">請把 [[案例卡名]] 改寫成一份可以給潛在客戶看的一頁 case study。
+
+規則：
+1.【去識別化】客戶名稱、人名、可辨識細節全部拿掉或模糊化
+  （例如「一家 200-500 人的精密製造商」）。
+2. 只用「結果」欄裡標明是「客戶說的」或「我量的」的數字。
+  【標成「我估的」一律不要寫進去】。
+3. 結構：客戶原本的處境 → 真正的問題 → 我們做了什麼 → 結果 → 適合誰
+4. 不要加任何案例卡裡沒有的形容詞。
+
+寫完告訴我：哪些內容我應該再確認一次能不能對外講。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一份可以直接寄出去的一頁，而且每個數字你都敢認</p>
+</div><div class="card">
+<div class="hd"><span class="no">5.2</span><h3>新需求 → 提案骨架</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">線索進來，十分鐘給得出可信回答。</p>
+<div class="pw"><button class="cp" data-i="15">複製</button><pre><code id="c15">有一個新的需求進來：
+【描述這個需求，客戶原話最好】
+
+請根據我的知識庫回答：
+1. 我做過最像的三個案例是哪幾個？像在哪裡、不像在哪裡？
+2. 有沒有現成的模式或產品可以直接套？
+3. 如果要接，大概要幾人日？（用歷史案例的工時範圍）
+4. 需要調動哪些資源？有沒有我現在調不動的？
+5. 根據以上，草擬一份提案骨架。
+
+規則：
+- 每一個判斷都要標明是根據哪一張卡。
+- 知識庫裡沒有依據的，直接說「這部分我沒做過」，不要推測。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　三個同構案例 ＋ 工時區間 ＋ 一份骨架。而且每句話指得回卡</p>
+</div><div class="card">
+<div class="hd"><span class="no">5.3</span><h3>能力地圖</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">不是你自我介紹的說法，是從案例反推「你實際上會做什麼」。</p>
+<div class="pw"><button class="cp" data-i="16">複製</button><pre><code id="c16">根據我的知識庫，幫我做一份「我實際上會做什麼」的清單。
+
+不要用我自我介紹的說法，要從案例反推：
+1. 我實際交付過哪幾類東西？各做過幾次？
+2. ★ 哪些做法我做過 3 次以上？（這些是可以標價的）
+3. 哪些我只做過一次？（現在還不能當產品賣）
+4. ★ 哪些「沒解決的部分」重複出現？（這是我的下一個服務）
+5. 我的單點風險在哪——哪些資源只有一個來源？
+
+用表格，每一列標明依據哪幾張卡。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　你會看到自己真正的產品線，而不是你以為的那一條</p>
+</div><div class="card">
+<div class="hd"><span class="no">5.4</span><h3>它還能生出什麼</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">問一句，它自己列清單，還把指令寫好。</p>
+<div class="pw"><button class="cp" data-i="17">複製</button><pre><code id="c17">根據我這個知識庫，我可以做出什麼東西？
+請分類列出，每一種都告訴我：產出格式、給誰用、
+大概能做成什麼樣子，並且直接把可以執行的指令寫好，
+讓我複製就能用。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　一份你沒想過的產出清單</p>
+</div><h2 id="s6">6 · 維護</h2><div class="card">
+<div class="hd"><span class="no">6.1</span><h3>體檢</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">顧問版的體檢問的不是壞連結，是「哪個產品在腐爛」。</p>
+<div class="pw"><button class="cp" data-i="18">複製</button><pre><code id="c18">請幫我的知識庫做一次健康檢查，只回報不修改：
+
+1. 有幾張案例卡的「結果」是空的或還標著【待補】？
+2. 有哪些案例還沒有連到任何模式？
+3. 有哪些模式支撐的案例少於 2 個？（不夠格當模式）
+4. ★ 有哪些產品超過 6 個月沒有新的交付案例？（可能已經過時）
+5. ★ 有哪些資源被 2 個以上產品依賴，但只有一個來源？
+6. 有哪些 [[連結]] 指到不存在的卡？
+
+這一步只做唯讀檢查。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　第 4、5 項是這個庫真正的價值——資料夾永遠答不出來</p>
+</div><div class="card">
+<div class="hd"><span class="no">6.2</span><h3>每月排程</h3><span class="tag t0">不動你的檔案</span></div>
+<p class="one">設定一次就好。之後它自己盯著。</p>
+<div class="pw"><button class="cp" data-i="19">複製</button><pre><code id="c19">幫我設定每月自動健康檢查。
+只回報「跟上個月比的新變化」，不要每次都貼完整報告。
+特別提醒我：
+- 這個月有沒有結案但還沒建案例卡的
+- 有沒有產品已經超過半年沒有新案例
+純唯讀，不要修改或刪除任何檔案。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　每月一封，沒事不吵你</p>
+</div><h2 class="resc" id="s7">7 · 每次都要</h2><div class="card">
+<div class="hd"><span class="no">7.1</span><h3>動手之前</h3></div>
+<p class="one">只要那句指令會動到你的檔案，就把這一段貼在後面。</p>
+<div class="pw"><button class="cp" data-i="20">複製</button><pre><code id="c20">【動手之前】
+先列出你打算改動的檔案清單：檔名 ＋ 你要改什麼 ＋ 為什麼。
+等我說 OK 你才動手。我沒說 OK 之前，一個字都不要寫進檔案。
+不要刪除、不要改名、不要搬移任何既有檔案。</code></pre></div>
+<p class="exp">✔ <b>你應該拿到</b>　先給我看 · 我說 OK 你才動 · 沒說到的不要碰</p>
+</div>
+</div>
+<footer>不確定從哪開始？先跑 <b>0.1 → 0.2 → 1.1</b>，用一個你最近做完的案子試一次。</footer>
+<script>
+document.querySelectorAll('.cp').forEach(b=>b.onclick=()=>{
+ const t=document.getElementById('c'+b.dataset.i).innerText;
+ const done=()=>{b.textContent='已複製 ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='複製';b.classList.remove('ok')},1400)};
+ if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(()=>fb(t,done))}else{fb(t,done)}
+});
+function fb(t,cb){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity=0;
+ document.body.appendChild(a);a.select();try{document.execCommand('copy');cb()}catch(e){alert('請手動選取複製')}document.body.removeChild(a)}
+</script></html>

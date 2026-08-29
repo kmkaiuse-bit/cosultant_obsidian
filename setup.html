@@ -1,0 +1,207 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>先把 Obsidian 裝起來</title><style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2eee6;color:#1e1c19;font-size:16px;line-height:1.7;
+ font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif}
+header{background:linear-gradient(160deg,#1f3a34,#0f1f1c);color:#dfece7;padding:32px 22px 26px}
+header .in{max-width:920px;margin:0 auto}
+header h1{margin:0 0 8px;font-size:31px;color:#7fd1b4;font-weight:800}
+header p{margin:2px 0;color:#a9c4bb;font-size:15px}
+nav{position:sticky;top:0;z-index:9;background:rgba(31,58,52,.97);padding:9px 22px;
+ box-shadow:0 2px 10px rgba(0,0,0,.2);overflow-x:auto;white-space:nowrap}
+nav a{color:#7fd1b4;text-decoration:none;font-size:13.5px;padding:5px 12px;border:1px solid #3f6b60;
+ border-radius:14px;margin-right:6px;display:inline-block}
+nav a:hover{background:#2c5249;color:#fff}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px 80px}
+h2{font-size:22px;color:#1f5a4c;background:#e4efe9;border-left:8px solid #2e8b70;
+ padding:11px 16px;margin:38px 0 16px;scroll-margin-top:58px;border-radius:0 8px 8px 0}
+h2.resc{color:#8d2823;background:#faeceb;border-left-color:#b4342f}
+.card{background:#fff;border:1px solid #d4d0c6;border-radius:12px;padding:18px 20px;margin-bottom:18px;
+ box-shadow:0 2px 10px rgba(30,50,45,.06)}
+.hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.no{background:#1f3a34;color:#7fd1b4;border-radius:7px;padding:4px 12px;font-size:15px;font-weight:700}
+.hd h3{margin:0;font-size:21px;color:#1f3a34;font-weight:800}
+.tag{font-size:13px;font-weight:700;border-radius:20px;padding:3px 12px;border:1.5px solid;margin-left:auto}
+.t0{color:#1f5236;border-color:#2e7d4f;background:#eaf3ec}
+.t1{color:#8a5a17;border-color:#b8912f;background:#fdf3e2}
+.t2{color:#8d2823;border-color:#b4342f;background:#faeceb}
+.one{margin:0 0 13px;color:#55605a;font-size:16.5px}
+.pw{position:relative}
+.pw pre{background:#16211e;border:1px solid #2f4a43;border-radius:9px;margin:0;padding:17px 19px;overflow-x:auto}
+.pw code{color:#d8e8e2;font-size:14.5px;line-height:1.72;white-space:pre-wrap;word-break:break-word;
+ font-family:"Consolas","DejaVu Sans Mono",monospace}
+.cp{position:absolute;top:9px;right:10px;background:#2e8b70;color:#fff;border:none;border-radius:6px;
+ padding:6px 16px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.cp:hover{background:#3fae8d}
+.cp.ok{background:#1f5236}
+.exp{margin:11px 0 0;font-size:15px;color:#1f5236;background:#eaf3ec;border-radius:8px;padding:9px 14px}
+.exp b{color:#143a27}
+.loop{background:#16211e;color:#d8e8e2;border-radius:12px;padding:24px 26px;margin:26px 0}
+.loop .lt{color:#7fd1b4;font-weight:800;font-size:17px;margin-bottom:18px}
+.steps{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.st{flex:1;min-width:130px;background:#1f3a34;border:1px solid #3f6b60;border-radius:9px;
+ padding:13px 12px;text-align:center}
+.st b{display:block;color:#7fd1b4;font-size:18px;margin-bottom:5px}
+.st span{font-size:14px;color:#a9c4bb;line-height:1.5}
+.ar{display:flex;align-items:center;color:#4f8577;font-size:22px}
+.back{margin-top:12px;text-align:center;background:#1f3a34;border:1px dashed #4f8577;
+ border-radius:9px;padding:9px;color:#7fd1b4;font-size:15px}
+.lnote{margin:16px 0 0;font-size:15.5px;line-height:1.8;color:#c3d6cf}
+.lnote b{color:#7fd1b4}
+.rule{background:linear-gradient(160deg,#1f3a34,#0f1f1c);color:#dfece7;border-radius:12px;
+ padding:20px 24px;margin:26px 0;font-size:19px;line-height:1.75;text-align:center}
+.rule b{color:#7fd1b4}
+footer{text-align:center;color:#7c8681;font-size:13.5px;padding:26px}
+@media print{nav,.cp{display:none}body{background:#fff}
+ .pw pre{background:#f0f2f0;border:1px solid #2e8b70}.pw code{color:#1e1c19}
+ .card{break-inside:avoid}}
+
+.step{background:#fff;border:1px solid #d4d0c6;border-radius:12px;padding:20px 22px;margin-bottom:18px;
+ box-shadow:0 2px 10px rgba(30,50,45,.06)}
+.step h3{margin:0 0 4px;font-size:21px;color:#1f3a34;display:flex;align-items:center;gap:11px}
+.step h3 .n{background:#2e8b70;color:#fff;border-radius:50%;width:32px;height:32px;flex:0 0 auto;
+ display:flex;align-items:center;justify-content:center;font-size:17px}
+.step .sub{color:#6d7a74;font-size:14.5px;margin:0 0 12px 43px}
+.step .bd{margin-left:43px}
+.step ol,.step ul{padding-left:20px;margin:8px 0}
+.step li{margin:6px 0}
+.lnk{display:inline-block;background:#eaf3ec;border:1.5px solid #2e8b70;border-radius:8px;
+ padding:9px 16px;color:#1f5236;text-decoration:none;font-weight:700;font-size:16px;margin:6px 0}
+.lnk:hover{background:#2e8b70;color:#fff}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px;background:#fff;
+ border-radius:8px;overflow:hidden;box-shadow:0 1px 6px rgba(30,50,45,.08)}
+th{background:#1f3a34;color:#dfece7;padding:9px 13px;text-align:left;font-size:14.5px}
+td{padding:9px 13px;border-top:1px solid #e3e6e2;vertical-align:top}
+tr:nth-child(even) td{background:#f7faf8}
+kbd{background:#1f3a34;color:#7fd1b4;border-radius:5px;padding:2px 9px;font-size:14px;
+ font-family:Consolas,monospace}
+.loop table{background:transparent;box-shadow:none;border-radius:9px;overflow:hidden}
+.loop th{background:#25423b;color:#7fd1b4}
+.loop td{background:#1b2b27;color:#d8e8e2;border-top:1px solid #2f4a43}
+.loop tr:nth-child(even) td{background:#182420}
+.loop td b{color:#7fd1b4}
+.key{background:#eaf3ec;border-left:5px solid #2e8b70;border-radius:0 9px 9px 0;padding:13px 18px;
+ margin:14px 0;font-size:16px;line-height:1.75}
+.key b{color:#1f5236}
+.warn{background:#faeceb;border-left:5px solid #b4342f;border-radius:0 9px 9px 0;padding:13px 18px;
+ margin:14px 0;font-size:16px;line-height:1.75;color:#5c2320}
+.warn b{color:#8d2823}
+</style>
+<header><div class="in"><h1>先把 Obsidian 裝起來</h1>
+<p>大約 10 分鐘　·　免費　·　不用寫程式</p>
+<p>裝好之後再回去跑指令總表</p></div></header>
+<nav><a href="#s0">四個步驟</a><a href="#s1">四個操作</a><a href="#s2">常見狀況</a><a href="index.html">指令總表 →</a></nav>
+<div class="wrap">
+<div class="loop"><div class="lt">先搞懂一件事：誰做什麼</div>
+<table style="margin:0"><tr><th style="width:150px"></th><th>它做什麼</th><th>它做不到什麼</th></tr>
+<tr><td><b style="color:#1f3a34">WorkBuddy</b></td>
+<td>讀你的檔案、整理、寫成筆記、搜尋、批次處理</td>
+<td><b>碰不到 Obsidian 的畫面</b> —— 不會幫你開關係圖、按按鈕</td></tr>
+<tr><td><b style="color:#1f3a34">Obsidian</b></td>
+<td>把已經寫好的檔案之間的連結<b>畫成一張圖</b>，讓你點來點去</td>
+<td>不會自己閱讀、不會自己整理、不會自己寫東西</td></tr></table>
+<p class="lnote">它們靠<b>同一個資料夾</b>溝通：WorkBuddy 改檔案 → Obsidian 讀到新的檔案 → 圖就變了。</p></div>
+
+<div class="key">💡 <b>改完看不到變化？</b> 回 Obsidian 按 <kbd>Ctrl + R</kbd>（Mac 是 <kbd>Cmd + R</kbd>）重新載入。<br>
+九成的「它是不是沒做？」都是這個原因。</div>
+
+<h2 id="s0">四個步驟，大約 10 分鐘</h2>
+
+<div class="step"><h3><span class="n">1</span>下載安裝 Obsidian</h3>
+<p class="sub">免費。個人、商業、非營利用途全部免費，不用買任何東西。</p>
+<div class="bd">
+<a class="lnk" href="https://obsidian.md/download" target="_blank">🔗 obsidian.md/download</a>
+<p>下載 → 安裝 → 打開。第一次開會問你要建立還是開啟保險庫，<b>先不要選，下一步再處理。</b></p>
+</div></div>
+
+<div class="step"><h3><span class="n">2</span>開一個「空的」資料夾當知識庫</h3>
+<p class="sub">這個資料夾就是你的知識庫本體。之後所有東西都寫在這裡。</p>
+<div class="bd">
+<p>在你習慣的位置開一個新資料夾，例如：</p>
+<pre style="background:#16211e;color:#d8e8e2;border-radius:9px;padding:14px 18px;font-size:14.5px">C:\Users\你的名字\Documents\我的知識庫</pre>
+<div class="warn">⚠️ <b>不要</b>直接用你放原始檔案（提案、報告、往來文件）的那個資料夾。<br>
+<b>兩個要分開</b>：原始檔那個<b>只准讀</b>，知識庫這個才可以寫。<br>
+這樣就算 AI 做壞了，你的原始檔一個字都不會少。</div>
+</div></div>
+
+<div class="step"><h3><span class="n">3</span>用 Obsidian「開啟資料夾為保險庫」</h3>
+<p class="sub">注意是「<b>開啟資料夾</b>」，不是「建立新保險庫」。</p>
+<div class="bd">
+<ol>
+<li>打開 Obsidian → 點 <b>「開啟資料夾為保險庫」</b>（Open folder as vault）</li>
+<li>選你剛剛開的那個空資料夾</li>
+<li>左邊會出現空的檔案清單 —— 對的，現在什麼都沒有</li>
+</ol>
+<div class="key">「保險庫」（Vault）聽起來很厲害，<b>它就是一個普通資料夾</b>。<br>
+沒有雲端、沒有帳號、沒有資料庫。你把資料夾拷到隨身碟，整個知識庫就跟著走。</div>
+</div></div>
+
+<div class="step"><h3><span class="n">4</span>把顏色設好（不設的話圖會一片灰）</h3>
+<p class="sub">等你跑完指令總表的 <b>0.2</b>、資料夾建好之後再做這一步。</p>
+<div class="bd">
+<p>不用自己點設定，把這一段貼給 WorkBuddy 就好：</p>
+<div class="pw"><button class="cp" data-i="1">複製</button><pre><code id="c1">請幫我設定 Obsidian 的關係圖顏色分組。
+我的知識庫路徑：【貼上你的資料夾路徑】
+
+請直接改 .obsidian/graph.json，幫這幾個資料夾各設一組顏色：
+  01_案例      深藍
+  02_模式      紫
+  03_產品      金黃   ← 最醒目，這是我要賣的東西
+  04_資源      綠
+  05_交付物    青
+  06_客戶類型  灰藍
+  07_教訓      橘紅
+  99_附件      淺灰
+
+另外請打開這幾個設定：
+  showArrow: true          （連結顯示方向）
+  nodeSizeMultiplier: 1.2  （節點字大一點）
+  repelStrength: 15        （點散開一點）
+  linkDistance: 250
+
+改完提醒我回 Obsidian 按 Ctrl + R 重新載入。</code></pre></div>
+</div></div>
+
+<h2 id="s1">你只需要會四個操作</h2>
+
+<table>
+<tr><th style="width:230px">操作</th><th>怎麼做</th><th>什麼時候用</th></tr>
+<tr><td><b>重新載入</b></td><td><kbd>Ctrl + R</kbd></td><td>WorkBuddy 改完檔案，圖沒變的時候</td></tr>
+<tr><td><b>關係圖</b>（全部）</td><td><kbd>Ctrl + P</kbd> → 打「圖譜」→ 開啟圖譜視圖</td><td>想看整座知識庫長什麼樣</td></tr>
+<tr><td><b>局部圖</b>（單一筆記周邊）</td><td>打開一篇 → <kbd>Ctrl + P</kbd> → 「開啟局部圖譜」<br>右上齒輪把<b>深度設成 2</b></td><td>★ 準備提案時最好用 —— 一個案例周邊的模式、資源、交付物一次看完</td></tr>
+<tr><td><b>搜尋</b></td><td><kbd>Ctrl + Shift + F</kbd></td><td>「這個客戶／這個做法我寫過嗎」</td></tr>
+</table>
+
+<div class="key">其他功能<b>全部可以不學</b>。這四個就夠你把整套跑完。</div>
+
+<h2 id="s2">常見狀況</h2>
+
+<table>
+<tr><th style="width:280px">狀況</th><th>怎麼辦</th></tr>
+<tr><td>WorkBuddy 改完，Obsidian 沒變化</td><td>按 <kbd>Ctrl + R</kbd>。九成是這個</td></tr>
+<tr><td>圖上一片灰，看不出誰是誰</td><td>回第 4 步設顏色。<b>沒設顏色的圖等於沒建</b></td></tr>
+<tr><td>圖上有很多灰色的小點</td><td>那是「連到不存在的筆記」。少量正常（＝待寫清單），太多就是名字打錯字</td></tr>
+<tr><td>圖太擠 / 太散</td><td>關係圖右上齒輪 → Forces → 調 Repel force 和 Link distance</td></tr>
+<tr><td>字太小，看不清楚</td><td>設定 → 外觀 → 字型大小調到 18</td></tr>
+<tr><td>不小心改壞了</td><td>那些都是純文字檔。用檔案總管開，記事本就改得動</td></tr>
+</table>
+
+<div class="rule">Obsidian <b>不閱讀、也不整理</b>。<br>
+它只做一件事：把已經寫好的檔案之間的連結<b>畫出來、讓你點</b>。<br><br>
+你的資產是<b>那一堆純文字檔</b>，不是 Obsidian。<br>
+明天把 Obsidian 移除，知識庫一個字都不會少。</div>
+
+<div style="text-align:center;margin:34px 0 10px">
+<a class="lnk" href="index.html" style="font-size:18px;padding:13px 26px">裝好了 → 開始跑指令總表 →</a></div>
+</div>
+<footer>不確定要不要裝？看最上面那張表就知道它負責什麼。</footer>
+<script>
+document.querySelectorAll('.cp').forEach(b=>b.onclick=()=>{
+ const t=document.getElementById('c'+b.dataset.i).innerText;
+ const done=()=>{b.textContent='已複製 ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='複製';b.classList.remove('ok')},1400)};
+ if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done).catch(()=>fb(t,done))}else{fb(t,done)}
+});
+function fb(t,cb){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity=0;
+ document.body.appendChild(a);a.select();try{document.execCommand('copy');cb()}catch(e){alert('請手動選取複製')}document.body.removeChild(a)}
+</script></html>
